@@ -23,8 +23,8 @@ const AboutSection = () => {
                         About Me
                     </h2>
                     <p className="text-base lg:text-lg">
-                        I’m a student at NYU Gallatin concentrating in Computer Science and the history behind it.
-                        Alongside coursework in computer science and math, I’ve studied the history of science, data,
+                        I'm interested in computer science and the historical forces that have shaped it. Alongside
+                        coursework in computer science and a minor in math, I’ve studied the history of science, data,
                         and technology, with a particular interest in how computing shapes society and inequality.
                         <br /><br />
                         Outside of school, I enjoy skateboarding, filming and editing videos, watching movies, and
