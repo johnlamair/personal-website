@@ -1,37 +1,24 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-//The ProjectCard component displays a project card with an image, title, description, and links to the project’s GitHub and preview, featuring hover effects that reveal icons for accessing these links.
-
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
-  return (
-    <div>
-      <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
-      >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-          </Link>
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-          </Link>
+const ProjectCard = ({ title, description, gitUrl }) => {
+    return (
+        <div className="bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+            <div className="p-6 flex flex-col flex-grow">
+                <h5 className="text-xl font-bold text-black mb-3">{title}</h5>
+                <p className="text-slate-600 text-sm flex-grow">{description}</p>
+                <div className="mt-6 flex justify-center">
+                    <Link href={gitUrl} target="_blank" rel="noopener noreferrer" className="p-[4px] flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white">
+                        <span className="bg-black hover:bg-slate-800 rounded-full px-5 py-2 flex items-center justify-center gap-2 text-sm font-medium">
+                            <CodeBracketIcon className="h-4 w-4" />
+                            View on GitHub
+                        </span>
+                    </Link>
+                </div>
+            </div>
         </div>
-      </div>
-      <div className="text-black rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-black">{description}</p>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default ProjectCard;
