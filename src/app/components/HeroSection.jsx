@@ -27,7 +27,7 @@ const HeroSection = () => {
                             </span>
                         </a>
 
-                        <Link href="/John_LaMair_Resume_CS_May28.pdf" target="_blank" rel="noopener noreferrer" className="p-[4px] flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white">
+                        <Link href="/JohnLaMair_Resume.pdf" target="_blank" rel="noopener noreferrer" className="p-[4px] flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white">
                             <span className="bg-black hover:bg-slate-800 rounded-full px-5 py-2 flex items-center justify-center">
                                 <Image src="/resume-icon.png" alt="Resume" width={25} height={25} />
                             </span>
