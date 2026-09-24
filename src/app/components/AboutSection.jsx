@@ -28,7 +28,7 @@ const AboutSection = () => {
                         and technology, with a particular interest in how computing shapes society and inequality.
                         <br /><br />
                         Outside of school, I enjoy skateboarding, filming and editing videos, watching movies, and
-                        going to live music shows in NYC and my hometown, Austin.
+                        going watching live music in NYC and my hometown, Austin.
                     </p>
                 </div>
 
