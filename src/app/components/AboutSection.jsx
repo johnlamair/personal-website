@@ -24,8 +24,8 @@ const AboutSection = () => {
                     </h2>
                     <p className="text-base lg:text-lg">
                         I'm interested in computer science and the historical forces that have shaped it. Alongside
-                        coursework in computer science and a minor in math, I’ve studied the history of science, data,
-                        and technology, with a particular interest in how computing shapes society and inequality.
+                        coursework in CS and a minor in math, I’ve studied the history of science, data,
+                        and technology, with a particular interest in how computing influences inequality.
                         <br /><br />
                         Outside of school, I enjoy skateboarding, filming and editing videos, watching movies, and
                         going watching live music in NYC and my hometown, Austin.
